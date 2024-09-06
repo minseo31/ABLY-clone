@@ -1,0 +1,34 @@
+.category{
+    width: 100%;
+    height: 300px;
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    grid-template-rows: repeat(3, minmax(0, 1fr));
+    gap: 10px;
+    text-align: center;
+    font-size: smaller;
+    cursor: pointer;
+
+    border-bottom: 5px solid #ddd;
+}
+
+.category-item{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    transition: background-color 0.2s;
+}
+.category-item:hover {
+    background-color: #aaa;
+    color: #fff;
+}
+
+.category-img{
+    object-fit: cover;
+    width: 30%;
+    height: auto;
+}

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ABLY-clone | kimminseo</title>
+    <link rel="shortout icon" href="./image/fabicon1.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./style/reset.css" />
+    <link rel="stylesheet" href="./style/header.css" />
+    <link rel="stylesheet" href="./style//main.css" />
+    <link rel="stylesheet" href="./style/event.css" />
+    <link rel="stylesheet" href="./style/category.css" />
+    <link rel="stylesheet" href="./style/bottomBar.css" />
+    <link rel="stylesheet" href="./style/recommended_products.css" />
+    <link rel="stylesheet" href="./style/products.css" />
+    <link rel="stylesheet" href="./style/category-all.css" />
+    <script type="module" src="./module/index.js" defer></script>
+    <script type="module" src="./module/Category_all.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <!-- 하단 바 -->
+      <aside class="bottom-bar">
+        <a href="/" id="n1" class="navigation">
+          <i class="fa-solid fa-house"></i>
+          <span>홈</span>
+        </a>
+
+        <div id="n2" class="navigation">
+          <i class="fa-solid fa-bars"></i>
+          <span>전체보기</span>
+        </div>
+
+        <a href="pages/search.html" id="n3" class="navigation">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <span>검색</span>
+        </a>
+
+        <a href="pages/user.html" id="n3" class="navigation">
+          <i class="fa-regular fa-user"></i>
+          <span>마이페이지</span>
+        </a>
+      </aside>
+
+      <!-- 헤더 -->
+      <header class="header">
+        <!-- 수신 (app) -->
+        <div class="header-top">
+          <div class="logo-box">
+            <span class="logo">A B L Y</span>
+            <span class="app-text">앱에서 더 많은 상품을 볼 수 있어요!</span>
+          </div>
+          <button class="app-btn">앱에서 보기</button>
+        </div>
+        <!-- 검색 박스 -->
+        <div class="serach-box">
+          <div class="serach-inputbox">
+            <input
+              id="search-input"
+              type="text"
+              class="serach-input"
+              placeholder="하나만 사도 무료배송"
+            />
+            <i class="fa-solid fa-magnifying-glass serach-icon"></i>
+          </div>
+          <i class="fa-solid fa-cart-shopping cart-icon"></i>
+        </div>
+      </header>
+
+      <!-- 메인 -->
+      <main class="main">
+        <!-- 배너 (이벤트) -->
+        <section class="event-content">
+          <!-- 컨텐츠 - js에서 추가 -->
+          <div id="e-content"></div>
+
+          <!-- 버튼 박스 -->
+          <div class="e-btn-box">
+            <button id="left-btn">
+              <i class="fa-solid fa-angle-left"></i>
+            </button>
+            <button id="right-btn">
+              <i class="fa-solid fa-angle-right"></i>
+            </button>
+          </div>
+          <!-- 컨텐츠 순서 -->
+          <span class="counter">1 / 16</span>
+        </section>
+
+        <!-- 카테고리 -->
+        <section class="category"></section>
+
+        <!-- 추천 상품  -->
+        <section class="recommended-products">
+          <div class="recommended-products-t">
+            <span class="recommended-products-title"></span>
+            <span class="recommended-products-text"></span>
+          </div>
+          <!-- 상품 -->
+          <div class="recommended-products-box"></div>
+        </section>
+
+        <!-- 메인 상품 -->
+        <section class="products"></section>
+
+        <!-- 전체보기 -->
+        <article class="category-all">
+          <!-- 상단부 -->
+          <div class="category-header">
+            <i id="category-back" class="fa-solid fa-angle-left"></i>
+            <span>전체보기</span>
+            <div class="category-header-iconBox">
+              <a href="pages/search.html">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </a>
+              <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+          </div>
+
+          <!-- 카테고리 컨텐츠 -->
+          <div class="category-contents">
+            <!-- 왼쪽 사이드바 -->
+            <div class="category-sidebar"></div>
+            <!-- 오른쪽 카테고리 -->
+            <div class="category-itemBox"></div>
+          </div>
+        </article>
+      </main>
+    </div>
+  </body>
+</html>

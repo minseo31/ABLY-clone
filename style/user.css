@@ -1,0 +1,268 @@
+.header-user {
+  max-width: 600px;
+  width: 100%;
+  height: 50px;
+  background-color: #fff;
+
+  position: fixed;
+  top: 0;
+  z-index: 999;
+}
+
+.header-content {
+  width: 100%;
+  height: 100%;
+  background-color: #ff5160;
+  padding: 10px 15px 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #000;
+  box-sizing: border-box;
+}
+
+.user-main {
+  width: 100%;
+  height: 100vh;
+  padding-block: 50px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.signin-container {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin: 0 auto;
+}
+
+.login-form {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.sign-logo {
+  width: 100%;
+  height: fit-content;
+  font-size: 30px;
+  font-weight: bold;
+  margin-block: 50px;
+  text-align: center;
+}
+
+.input-box {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin: 0 auto;
+}
+
+.input-box > input {
+  width: 100%;
+  height: 40px;
+  font-size: 17px;
+  outline: none;
+  border: 1px solid #aaa;
+  border-radius: 30px;
+  padding-left: 10px;
+  box-sizing: border-box;
+}
+
+.input-box > label {
+  color: #000;
+  font-size: 15px;
+  font-weight: bold;
+  padding-left: 10px;
+}
+
+.sign-button {
+  width: 100%;
+  height: 50px;
+  border: none;
+  border-radius: 30px;
+  font-size: 17px;
+  color: #fff;
+  background-color: #000;
+}
+
+.signup-text {
+  font-size: 13px;
+  color: #888;
+}
+
+.signup-nav {
+  color: #ff5160;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.signup-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 999;
+  max-width: 600px;
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  background-color: #00000070;
+  transform: scale(0);
+}
+
+.signup-content-box {
+  width: 50%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin: 70px auto;
+  padding: 50px 50px;
+  background-color: #fff;
+  border-radius: 20px;
+  position: relative;
+  z-index: 1000;
+  cursor: pointer;
+}
+
+.signup-x {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 20px;
+  color: #888;
+  cursor: pointer;
+}
+
+.user-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0 auto;
+  max-width: 600px;
+  width: 100%;
+  height: 100vh;
+  background-color: #fff;
+  box-sizing: border-box;
+  padding-block: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  transform: scale(0);
+}
+
+.user-hi {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 15px;
+}
+
+.user-name {
+  width: 50%;
+  height: fit-content;
+  margin: 0 auto;
+  font-size: 25px;
+  text-align: center;
+}
+
+.order-container {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.order-box {
+  width: 100px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.order-img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.order-box > span {
+  font-size: 15px;
+  font-weight: bold;
+  color: #888;
+}
+
+.product-box {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  gap: 10px;
+}
+
+.product-title-box {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logout {
+  font-size: 12px;
+  text-decoration: underline;
+  color: #ff5160;
+  text-align: center;
+  margin: 5px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 576px) {
+  .header-user {
+    height: 70px;
+  }
+
+  .sign-logo {
+    font-size: 40px;
+  }
+
+  .signin-container {
+    width: 80%;
+  }
+
+  .input-box > input {
+    height: 60px;
+  }
+
+  .sign-button {
+    height: 70px;
+    border-radius: 40px;
+    font-size: 20px;
+  }
+
+  .signup-content-box {
+    width: 60%;
+    padding: 80px 50px;
+  }
+
+  .user-container {
+    padding-top: 100px;
+  }
+}

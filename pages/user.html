@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../style/reset.css" />
+    <link rel="stylesheet" href="../style/main.css" />
+    <link rel="stylesheet" href="../style/header.css" />
+    <link rel="stylesheet" href="../style/bottomBar.css" />
+    <link rel="stylesheet" href="../style/recommended_products.css" />
+    <link rel="stylesheet" href="../style/user.css" />
+    <script type="module" src="../module/User.js" defer></script>
+    <title>ABLY-clone/user | kimminseo</title>
+    <link rel="shortout icon" href="../image/fabicon1.ico" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- 하단 바 -->
+      <asides class="bottom-bar">
+        <a href="../index.html" id="n1" class="navigation">
+          <i class="fa-solid fa-house"></i>
+          <span>홈</span>
+        </a>
+
+        <a href="../index.html" id="n2" class="navigation">
+          <i class="fa-solid fa-bars"></i>
+          <span>전체보기</span>
+        </a>
+
+        <a href="./search.html" id="n3" class="navigation">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <span>검색</span>
+        </a>
+
+        <a href="pages/user.html" id="n3" class="navigation">
+          <i class="fa-regular fa-user"></i>
+          <span>마이페이지</span>
+        </a>
+      </asides>
+
+      <!-- 헤더 -->
+      <header class="header-user">
+        <!-- 수신 (app) -->
+        <div class="header-content">
+          <div class="logo-box">
+            <span class="logo">A B L Y</span>
+            <span class="app-text">앱에서 더 많은 상품을 볼 수 있어요!</span>
+          </div>
+          <button class="app-btn">앱에서 보기</button>
+        </div>
+      </header>
+
+      <!-- 메인 -->
+      <main class="user-main">
+        <!-- 로그인  -->
+        <section class="signin-container">
+          <span class="sign-logo">A B L Y</span>
+          <!-- 아이디 -->
+          <form id="login-form" class="login-form">
+            <div class="input-box">
+              <label for="ID">아이디</label>
+              <input
+                id="login-id"
+                type="text"
+                name="ID"
+                placeholder="아이디를 입력하세요!"
+              />
+            </div>
+            <!-- 비밀번호 -->
+            <div class="input-box">
+              <label for="PW">비밀번호</label>
+              <input
+                id="login-pw"
+                type="password"
+                name="PW"
+                placeholder="비밀번호를 입력하세요!"
+              />
+            </div>
+            <!-- 로그인 버튼 -->
+            <div class="input-box">
+              <button class="sign-button" type="submit">로그인 하기</button>
+            </div>
+          </form>
+          <span class="signup-text"
+            >계정이 없으신가요? <span class="signup-nav">회원가입</span>하기
+          </span>
+        </section>
+
+        <!-- 회원가입 -->
+        <section class="signup-container">
+          <div class="signup-content-box">
+            <span class="sign-logo">A B L Y</span>
+            <form id="signup-form" class="login-form">
+              <!-- 이름 -->
+              <div class="input-box">
+                <label for="name">이름</label>
+                <input
+                  id="signup-name"
+                  type="text"
+                  name="name"
+                  placeholder="이름을 입력하세요!"
+                />
+              </div>
+              <!-- 아이디 -->
+              <div class="input-box">
+                <label for="ID">아이디</label>
+                <input
+                  id="signup-id"
+                  type="text"
+                  name="ID"
+                  placeholder="아이디를 입력하세요!"
+                />
+              </div>
+              <!-- 비밀번호 -->
+              <div class="input-box">
+                <label for="PW">비밀번호</label>
+                <input
+                  id="signup-pw"
+                  type="password"
+                  name="PW"
+                  placeholder="비밀번호를 입력하세요!"
+                />
+              </div>
+              <!-- 로그인 버튼 -->
+              <div class="input-box">
+                <button class="sign-button" type="submit">가입 하기</button>
+              </div>
+              <i class="fa-solid fa-xmark signup-x"></i>
+            </form>
+          </div>
+        </section>
+
+        <!-- 유저 -->
+        <section class="user-container">
+          <span class="user-hi">환영합니다</span>
+          <span class="user-name"></span>
+          <span class="logout">로그아웃</span>
+          <div class="order-container">
+            <div class="order-box">
+              <img class="order-img" src="../image/order1.jpg" alt="주문" />
+              <span>주문</span>
+            </div>
+            <div class="order-box">
+              <img class="order-img" src="../image/order2.jpg" alt="주문" />
+              <span>배송</span>
+            </div>
+            <div class="order-box">
+              <img class="order-img" src="../image/order3.jpg" alt="주문" />
+              <span>도착</span>
+            </div>
+            <div class="order-box">
+              <img class="order-img" src="../image/order4.jpg" alt="주문" />
+              <span>리뷰</span>
+            </div>
+          </div>
+          <section class="recommended-products">
+            <div class="product-title-box">
+              <span class="recommended-products-title"></span>
+              <span class="recommended-products-text"></span>
+            </div>
+            <!-- 상품 -->
+            <div class="recommended-products-box"></div>
+          </section>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
